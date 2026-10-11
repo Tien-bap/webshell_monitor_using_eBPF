@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App</title>
+</head>
+<body>
+    <h1>Hello, Webserver</h1>
+    <form action="/execute" method="post">
+        <input type="text" name="command" placeholder="Enter command line">
+        <button type="submit">Execute</button>
+    </form>
+    {% if result is not none %}
+        <h2>Command Output:</h2>
+        <pre>{{ result }}</pre>
+    {% endif %}
+</body>
+</html>

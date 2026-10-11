@@ -1,0 +1,16 @@
+
+//build trong thuw mucj project
+docker build -t flask-webserver .
+
+//chayj container
+docker run -d \
+    --name flask-lab \
+    -p 5000:5000 \
+    flask-webserver
+
+
+// vao terminal docker
+docker exec -it flask-lab bash
+
+// chayj flask-lab
+docker start flask-lab

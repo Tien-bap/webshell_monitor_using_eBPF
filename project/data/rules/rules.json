@@ -1,0 +1,94 @@
+{
+    "connect_rules": [
+        {
+            "id": "NET001",
+            "name": "Outbound Connection",
+            "description": "Block outbound connections to non-whitelisted addresses",
+
+            "enabled": true,
+
+            "severity": "HIGH",
+
+            "condition": {
+                "event_type": "connect"
+
+
+            },
+
+            "response": {
+                "action": "SUSPEND"
+            }
+        }
+    ], 
+
+    "file_rules":[
+        {
+            "id": "FILE001",
+            "name": "Unauthorized File Access",
+            "description": "Detects unauthorized access to sensitive files",
+
+            "condition": {
+                "event_type": "openat",
+                "file_path": {
+                    "sensitive_files": [
+                        "/etc/passwd",
+                        "/etc/shadow",
+                        "/var/log/auth.log",
+                        "flag.txt"
+                    ]
+                },
+
+                "access_type": {
+                    "deny": [
+                        "read",
+                        "write"
+                    ]
+                }
+            }
+
+        }
+    ], 
+
+    "execve_rules": [
+        {
+            "id": "EXECVE001",
+
+            "name": "Sensitive Command Execution",
+
+            "description": "Detect execution of sensitive commands through execve",
+
+            "enabled": true,
+
+            "severity": "MEDIUM",
+
+            "condition": {
+                "event_type": "execve",
+
+                "commands": [
+                    "cat",
+                    "ls", "whoami", "id"
+                ]
+            },
+
+            "response": {
+                "action": "ALERT"
+            }
+        },
+        {
+            "id": "EXECVE003",
+            "name": "Network Tool",
+            "description": "Detect execution of sensitive commands through execve",
+
+            "enabled": true,
+            "severity": "HIGH",
+            "condition": {
+                "event_type": "execve",
+                "commands": ["nc", "curl", "wget"]
+            },
+            "response": {
+                "action": "SUSPEND"
+            }
+        }
+
+    ]
+}
