@@ -2,7 +2,7 @@
 
 Đồ án niên luận cơ sở An toàn thông tin: giám sát hoạt động của tiến trình trong Docker từ Linux kernel, phát hiện hành vi nghi vấn bằng luật và hỗ trợ truy vết qua giao diện desktop.
 
-Tài liệu được tóm tắt từ [báo cáo khoa học `nlcs.pdf`](nlcs.pdf), đối chiếu với mã nguồn hiện tại.
+Tài liệu được tóm tắt từ [báo cáo `nlcs.pdf`](nlcs.pdf), đối chiếu với mã nguồn hiện tại.
 
 ## Chức năng chính
 
