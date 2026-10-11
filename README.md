@@ -2,7 +2,7 @@
 
 Đồ án niên luận cơ sở An toàn thông tin: giám sát hoạt động của tiến trình trong Docker từ Linux kernel, phát hiện hành vi nghi vấn bằng luật và hỗ trợ truy vết qua giao diện desktop.
 
-Tài liệu được tóm tắt từ [báo cáo khoa học `nlcs.docx`](nlcs.docx), đối chiếu với mã nguồn hiện tại.
+Tài liệu được tóm tắt từ [báo cáo khoa học `nlcs.pdf`](nlcs.pdf), đối chiếu với mã nguồn hiện tại.
 
 ## Chức năng chính
 
@@ -55,14 +55,14 @@ Agent giám sát chạy trên **máy Linux host**; Flask và Nginx chạy trong 
 ├── reverse_proxy/            # Docker Compose, Nginx và access log
 ├── docs/                     # Kiến trúc, hướng dẫn và ảnh minh họa
 ├── start_system.sh           # Build image, chạy Compose và agent
-└── nlcs.docx                 # Báo cáo khoa học gốc
+└── nlcs.pdf                 # Báo cáo khoa học gốc
 ```
 
 ## Giao diện
 
 ![Dashboard giám sát với Live Events, Alerts View, Event Detail và Process Tree](docs/images/dashboard.png)
 
-Ảnh trích từ báo cáo `nlcs.docx`. Xem thêm [giao diện và cách sử dụng](docs/USAGE.md).
+Ảnh trích từ báo cáo `nlcs.pdf`. Xem thêm [giao diện và cách sử dụng](docs/USAGE.md).
 
 ## Bắt đầu
 

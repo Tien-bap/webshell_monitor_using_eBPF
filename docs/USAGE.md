@@ -62,7 +62,7 @@ Nếu dùng môi trường Python riêng, cần chọn interpreter có đủ dep
 
 ![Danh sách HTTP request và thông tin chi tiết](images/web-log-analyzer.png)
 
-Các ảnh được trích nguyên bản từ [nlcs.docx](../nlcs.docx), minh họa phiên demo trong báo cáo.
+Các ảnh được trích nguyên bản từ [nlcs.pdf](../nlcs.pdf), minh họa phiên demo trong báo cáo.
 
 ## Dừng hệ thống
 

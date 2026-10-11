@@ -1,6 +1,6 @@
 # Kiến trúc và luồng dữ liệu
 
-Tóm tắt phần thiết kế hệ thống trong [nlcs.docx](../nlcs.docx), với mô tả hành vi theo mã nguồn hiện tại.
+Tóm tắt phần thiết kế hệ thống trong [nlcs.pdf](../nlcs.pdf), với mô tả hành vi theo mã nguồn hiện tại.
 
 ## Các thành phần
 
